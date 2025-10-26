@@ -1,9 +1,8 @@
-# Ignore system and unwanted folders
+﻿# Ignore system and unwanted folders
 Desktop/
 Documents/
 Downloads/
 AppData/
-list/
 *.lnk
 *.mdf
 *.ldf
