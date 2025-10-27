@@ -1,11 +1,18 @@
-﻿# Ignore system and unwanted folders
-sorting/
-list/
-Desktop/
-Documents/
-Downloads/
-AppData/
+﻿# Ignore everything by default
+*
+
+# Except list and sorting folders
+!list/
+!list/**/*.cpp
+!sorting/
+!sorting/**/*.cpp
+
+# Ignore system and unwanted files/folders
 *.lnk
 *.mdf
 *.ldf
 *.ewb
+Desktop/
+Documents/
+Downloads/
+AppData/
