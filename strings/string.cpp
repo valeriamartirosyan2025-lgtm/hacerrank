@@ -4,7 +4,7 @@ using namespace std;
 
 class String {
 private:
-    static const size_t A = 15; 
+    static const size_t A ; 
     size_t length;
     union {
         char small[A + 1]; 
@@ -13,7 +13,7 @@ private:
     bool isSSO() const { return length <= A; }
 
 public:
-    String() : length(0) { small[0] = '\0'; }
+    String() : length(0) { small[0] ; }
 
     String(const char* str) {
         length = std::strlen(str);
@@ -62,11 +62,11 @@ public:
     size_t size() const { return length; }
 
 
-    void print() const { cout << c_str() << "\n"; }
+    void print() const { cout << c_str() ; }
 };
 
 int main() {
-    String s1("Hello");
+    String s1();
     cout  << s1.c_str()  << s1.size() << endl;
 
     String s2 = s1;
