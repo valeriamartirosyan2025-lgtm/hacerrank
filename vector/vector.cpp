@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector> 
 using namespace std;
 
 class Vector {
@@ -7,7 +8,7 @@ private:
     size_t size;
     size_t capacity;
 
-public:
+public
     Vector() : data(nullptr), size(0), capacity(0) {}
     ~Vector() { delete[] data; }
 
